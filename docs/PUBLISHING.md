@@ -5,7 +5,7 @@ This repo is set up for GitHub-based Trusted Publishing to PyPI.
 ## Current state
 
 - Package name: `caat-a-swf-analyzer`
-- GitHub release: `v0.1.0`
+- Release version is taken from `pyproject.toml`; check GitHub Releases for the latest published tag
 - Publishing workflow: `.github/workflows/publish-pypi.yml`
 - GitHub environment: `pypi`
 

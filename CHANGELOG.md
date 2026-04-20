@@ -1,5 +1,13 @@
 # Changelog
 
+## v0.1.1 - 2026-04-20
+
+- add GitHub Actions CI for tests, builds, and distribution metadata checks
+- add GitHub Actions Trusted Publishing workflow for PyPI releases
+- add maintainer publishing documentation for the GitHub-to-PyPI release path
+- fix publish-workflow permissions so distribution artifacts can be downloaded in the publish job
+- verify the publish workflow reaches PyPI and fails only at the expected trusted-publisher configuration step
+
 ## v0.1.0 - 2026-04-20
 
 - initial public release of the local-only CAAT-A SWF analyzer
