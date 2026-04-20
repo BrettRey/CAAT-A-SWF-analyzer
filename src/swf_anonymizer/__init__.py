@@ -1,2 +1,1 @@
-"""Local-only SWF extraction and anonymization pipeline."""
-
+"""Local-only CAAT-A SWF extraction and anonymization pipeline."""

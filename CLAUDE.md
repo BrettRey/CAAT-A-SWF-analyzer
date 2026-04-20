@@ -1,4 +1,4 @@
-# CLAUDE.md — swf-anonymizer
+# CLAUDE.md — CAAT-A-SWF-analyzer
 
 ## Role
 

@@ -9,6 +9,7 @@ Create a zip that can be shared with ChatGPT Pro or another evaluator without ex
 The evaluation bundle contains only code and documentation:
 
 - root docs such as `README.md`, `AGENTS.md`, and `CLAUDE.md`
+- `CHANGELOG.md`
 - `src/`
 - `tests/`
 - `samples/`
@@ -38,6 +39,12 @@ Optional:
 ```bash
 python3.11 src/swf_export_eval_bundle.py --output dist/my-eval-bundle.zip
 python3.11 src/swf_export_eval_bundle.py --repo-root /path/to/repo --output /tmp/review.zip
+```
+
+Installed console script:
+
+```bash
+caat-a-swf-export-eval-bundle
 ```
 
 ## What The Evaluator Should Use

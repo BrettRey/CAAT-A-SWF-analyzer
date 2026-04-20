@@ -7,6 +7,7 @@ from zipfile import ZIP_DEFLATED, ZipFile
 
 ROOT_FILES = [
     ".gitignore",
+    "CHANGELOG.md",
     "LICENSE",
     "pyproject.toml",
     "README.md",
@@ -43,7 +44,7 @@ EXCLUDED_SUFFIXES = {
 
 def default_bundle_path(repo_root: Path) -> Path:
     stamp = datetime.now().strftime("%Y%m%d")
-    return repo_root / "dist" / f"swf-anonymizer-eval-{stamp}.zip"
+    return repo_root / "dist" / f"caat-a-swf-analyzer-eval-{stamp}.zip"
 
 
 def create_eval_bundle(repo_root: Path, output_path: Path | None = None) -> Path:
@@ -96,12 +97,13 @@ def should_exclude(path: Path, repo_root: Path) -> bool:
 
 def render_manifest(repo_root: Path) -> str:
     lines = [
-        "SWF Anonymizer Evaluation Bundle",
+        "CAAT-A-SWF-analyzer Evaluation Bundle",
         "",
         f"Bundle root: {repo_root.name}",
         "",
         "Included:",
         "- Root documentation files",
+        "- CHANGELOG.md",
         "- src/",
         "- tests/",
         "- samples/",

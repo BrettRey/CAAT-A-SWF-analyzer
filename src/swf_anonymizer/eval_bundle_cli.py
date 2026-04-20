@@ -18,7 +18,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--output",
         default="",
-        help="Optional path for the output zip. Defaults to dist/swf-anonymizer-eval-YYYYMMDD.zip under repo-root.",
+        help="Optional path for the output zip. Defaults to dist/caat-a-swf-analyzer-eval-YYYYMMDD.zip under repo-root.",
     )
     return parser.parse_args()
 

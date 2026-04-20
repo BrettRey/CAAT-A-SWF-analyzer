@@ -1,4 +1,4 @@
-# swf-anonymizer
+# CAAT-A-SWF-analyzer
 
 Local-only pipeline for extracting and anonymizing Humber Standard Workload Forms (SWFs) before any cloud LLM processing.
 
@@ -39,7 +39,7 @@ The persistent state directory `.swf_state/` is also local-only. It now stores t
 ## Directory layout
 
 ```
-swf-anonymizer/
+CAAT-A-SWF-analyzer/
 ├── README.md          (this file)
 ├── CLAUDE.md          (project guidance for Claude Code)
 ├── .gitignore         (keeps input/output out of git)
@@ -72,6 +72,16 @@ Guided workflow:
 
 ```bash
 python3.11 src/swf_workflow.py
+```
+
+Installed console scripts:
+
+```bash
+caat-a-swf-analyzer ...
+caat-a-swf-workflow
+caat-a-swf-safe-bundle --source-output output --dest llm_safe_workspace
+caat-a-swf-export-eval-bundle
+caat-a-swf-analyze-bank --output-root output_dropbox_full
 ```
 
 Optional flags:
@@ -121,7 +131,7 @@ To create a zip that contains only code and documentation, with no `input/`, `ou
 python3.11 src/swf_export_eval_bundle.py
 ```
 
-By default this writes `dist/swf-anonymizer-eval-YYYYMMDD.zip`.
+By default this writes `dist/caat-a-swf-analyzer-eval-YYYYMMDD.zip`.
 If you use the installed console script instead of the repo checkout, run it from the repo root or pass `--repo-root /path/to/repo`.
 
 ## Testing

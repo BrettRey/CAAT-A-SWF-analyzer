@@ -3,20 +3,36 @@ requires = ["setuptools>=68"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "swf-anonymizer"
+name = "caat-a-swf-analyzer"
 version = "0.1.0"
-description = "Local-only SWF extraction, anonymization, and reporting pipeline."
+description = "Local-only CAAT-A SWF extraction, anonymization, and workload analysis pipeline."
 readme = "README.md"
 requires-python = ">=3.11"
-license = {file = "LICENSE"}
+license = "MIT"
+authors = [{name = "Brett Reynolds"}]
+keywords = ["caat-a", "swf", "anonymization", "pdf", "workload", "faculty"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: End Users/Desktop",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.11",
+  "Topic :: Office/Business",
+  "Topic :: Text Processing",
+]
 dependencies = []
 
+[project.urls]
+Homepage = "https://github.com/BrettRey/CAAT-A-SWF-analyzer"
+Repository = "https://github.com/BrettRey/CAAT-A-SWF-analyzer"
+Issues = "https://github.com/BrettRey/CAAT-A-SWF-analyzer/issues"
+
 [project.scripts]
-swf-anonymizer = "swf_anonymizer.cli:main"
-swf-workflow = "swf_anonymizer.workflow:main"
-swf-safe-bundle = "swf_anonymizer.safe_bundle:main"
-swf-export-eval-bundle = "swf_anonymizer.eval_bundle_cli:main"
-swf-analyze-bank = "swf_anonymizer.bank_analysis_cli:main"
+caat-a-swf-analyzer = "swf_anonymizer.cli:main"
+caat-a-swf-workflow = "swf_anonymizer.workflow:main"
+caat-a-swf-safe-bundle = "swf_anonymizer.safe_bundle:main"
+caat-a-swf-export-eval-bundle = "swf_anonymizer.eval_bundle_cli:main"
+caat-a-swf-analyze-bank = "swf_anonymizer.bank_analysis_cli:main"
 
 [tool.setuptools]
 package-dir = {"" = "src"}
