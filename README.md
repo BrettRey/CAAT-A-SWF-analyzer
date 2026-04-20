@@ -101,6 +101,7 @@ python3.11 src/swf_analyze_bank.py --output-root output_dropbox_full
 
 - `docs/WORKFLOW_AND_REPORTS.md`: guided workflow, stable IDs, source-group breakdown, and report inventory
 - `docs/EVALUATION_BUNDLE.md`: safe packaging rules for external code review
+- `docs/PUBLISHING.md`: GitHub release and PyPI Trusted Publishing setup
 
 ## LLM-safe workspace
 
@@ -167,3 +168,12 @@ Working local CLI implemented for text PDFs, HTML exports, and text sidecars. Cu
 ## License
 
 This project is released under the MIT License. See `LICENSE`.
+
+## Publishing
+
+The repo includes:
+
+- `.github/workflows/ci.yml` for tests and distribution checks on pushes and pull requests
+- `.github/workflows/publish-pypi.yml` for Trusted Publishing to PyPI from GitHub Actions
+
+Live PyPI publication still requires one PyPI-side setup step: configure `BrettRey/CAAT-A-SWF-analyzer` as a Trusted Publisher for the `caat-a-swf-analyzer` project using the workflow file `.github/workflows/publish-pypi.yml` and environment `pypi`.
