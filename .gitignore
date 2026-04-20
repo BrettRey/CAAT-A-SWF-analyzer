@@ -1,0 +1,27 @@
+# Privacy: never commit SWFs, extracted text, anonymised text, or the key map
+input/
+output/extracted/
+output/anonymized/
+output/keys/
+.swf_state/
+dist/
+build/
+output_dropbox_full/
+docs/local_exec_report/build/
+llm_safe_workspace/
+.house-style/
+docs/local_exec_report/
+docs/local_exec_committee_email.md
+docs/2024_Academic_Collective_Agreement__EN_Signed.md
+docs/2024_Academic_Collective_Agreement__EN_Signed_images/
+
+# Python
+__pycache__/
+*.pyc
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+
+# OS
+.DS_Store
